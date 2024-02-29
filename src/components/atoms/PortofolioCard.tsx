@@ -17,10 +17,9 @@ export function PortofolioCard({
   paragraph,
   img,
 }: PortofolioCardCardProps) {
-  console.log(img);
   
   return (
-    <div className="flex w-full h-auto py-8 px-0 flex-col justify-center items-center gap-8 border-b border-neutral-300">
+    <div className="flex w-full h-auto py-8 px-0 flex-col sm:flex-row justify-center items-center gap-8 border-b border-neutral-300 sm:items-stretch">
       {/* <Image
         src={`/img/${img}`}
         alt={`${img}`}
@@ -29,15 +28,15 @@ export function PortofolioCard({
         className="rounded-lg"
 
       /> */}
-      <div style={{ backgroundImage: `url(/img/${img})`, backgroundPosition: 'top', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className="bg-red-500 w-full h-[288px] rounded-lg"></div>
+      <div style={{ backgroundImage: `url(/img/${img})`, backgroundPosition: 'top', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className="bg-red-500 w-full h-[288px] sm:h-[261px] sm:items-stretch sm:max-w-[372px] rounded-lg"></div>
 
-      <div className="w-full h-auto flex flex-col items-start gap-8">
+      <div className="w-full h-auto flex flex-col items-start gap-8 sm:flex-1">
         <div className="w-full h-auto flex flex-col items-start gap-4">
           <div className="w-full h-auto flex flex-col items-start gap-2">
             <h3 className="text-zinc-800 text-[26px] font-semibold font-proxima leading-[33.80px]">
               {heading}
             </h3>
-            <p className="w-72 text-zinc-600 text-base font-normal font-proxima leading-normal">
+            <p className="w-full h-auto text-zinc-600 text-base font-normal font-proxima leading-normal">
               {paragraph}
             </p>
           </div>
@@ -72,7 +71,7 @@ export function PortofolioCard({
           rel="noopener noreferrer"
           className="w-full"
         >
-          <Button variant={"outline"} size={"sm"} className="w-full">
+          <Button variant={"outline"} size={"sm"} className="w-full sm:w-auto">
             Learn more
           </Button>
         </a>

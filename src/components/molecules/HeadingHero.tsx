@@ -3,8 +3,8 @@ import React from "react";
 
 export function HeadingHero() {
   return (
-    <div className="w-full h-auto flex px-4 py-10 flex-col items-start gap-4 sm:bg-red-500 md:bg-yellow-400 lg:bg-blue-400">
-      <h1 className="items-stretch w-full h-auto font-parabolica text-[42px] not-italic font-bold leading-[50px]">
+    <div className="w-full h-auto flex px-4 sm:px-10 py-10 flex-col items-start gap-4 ">
+      <h1 className="items-stretch w-full h-auto font-parabolica text-[42px] sm:text-[56px] not-italic font-bold leading-[50px] sm:leading-[67px]">
         We Help You Create Digital Experiences
       </h1>
       <p className="items-stretch w-full h-auto font-proxima text-base not-italic font-normal leading-6 text-[#4F4F59]">

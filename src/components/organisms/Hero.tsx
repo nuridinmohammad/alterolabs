@@ -13,7 +13,7 @@ export const Hero = () => {
         alt="image-hero"
         className="w-full"
       /> */}
-      <div className="w-full bg-center bg-no-repeat bg-cover bg-[url('/img/image-hero.webp')] h-[300px]" />
+      <div className="w-full bg-center bg-no-repeat bg-cover bg-[url('/img/image-hero.webp')] h-[300px] sm:h-[624px]" />
     </div>
   );
 };

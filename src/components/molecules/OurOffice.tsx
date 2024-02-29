@@ -4,12 +4,14 @@ import React from "react";
 export function OurOffice() {
   return (
     <div className="w-full h-auto px-4 py-20 flex-col justify-start items-start gap-20 inline-flex">
-      <Image
+      {/* <Image
         src={"/img/office-img.webp"}
         alt="about-img"
         height={550}
         width={288}
-      />
+      /> */}
+      <div className="w-full bg-center bg-no-repeat bg-cover bg-[url('/img/office-img.webp')] h-[300px] rounded-lg" />
+
       <div className="w-full h-auto flex-col justify-start items-start gap-20 inline-flex">
         <div className="w-full h-auto flex-col justify-center items-start gap-6 inline-flex">
           <div className="self-stretch h-auto  flex-col justify-center items-start gap-2 flex">

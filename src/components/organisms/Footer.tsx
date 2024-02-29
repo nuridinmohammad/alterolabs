@@ -3,9 +3,9 @@ import React from "react";
 
 export function Footer() {
   return (
-    <div className="w-full h-auto px-4 pt-20 pb-10 bg-neutral-900 flex-col justify-start items-start gap-20 inline-flex">
+    <div className="w-full h-auto px-4 pt-20 sm:pt-20 sm:pr-10 sm:pb-0 sm:pl-10 pb-10 bg-neutral-900 flex-col justify-start items-start gap-20 inline-flex">
       <div className="w-full h-auto flex-col justify-start items-center gap-20 inline-flex">
-        <div className="w-full h-auto flex-col justify-start items-start gap-8 inline-flex">
+        <div className="w-full h-auto flex-col sm:flex-row justify-start items-start gap-8 inline-flex">
           <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex">
             <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
               Phone Number
@@ -23,26 +23,28 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="w-full h-auto flex-col justify-start items-start gap-8 inline-flex">
-          <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex">
-            <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
-              Korea Office
-            </p>
-            <p className="self-stretch text-white text-xl font-semibold font-proxima leading-relaxed">
-              17F, O2 Tower, 83 Uisadang-daero, Yeongdeungpo-gu, Seoul, South
-              Korea (07325)
-            </p>
+        <div className="w-full h-auto flex-col justify-start items-start gap-8 inline-flex sm:items-stretch sm:flex-wrap">
+          <div className="sm:flex-row w-full h-auto flex-col justify-start items-start gap-8 inline-flex sm:items-stretch sm:flex-wrap">
+            <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex sm:min-w-[328px] sm:max-w-full sm:flex-1">
+              <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
+                Korea Office
+              </p>
+              <p className="self-stretch text-white text-xl font-semibold font-proxima leading-relaxed">
+                17F, O2 Tower, 83 Uisadang-daero, Yeongdeungpo-gu, Seoul, South
+                Korea (07325)
+              </p>
+            </div>
+            <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex sm:min-w-[328px] sm:max-w-full sm:flex-1">
+              <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
+                Singapore Office
+              </p>
+              <p className="self-stretch text-white text-xl font-semibold font-proxima leading-relaxed">
+                Cakeplabs 5F, 9 Straits View, Marina One West Tower #05-07
+                Singapore
+              </p>
+            </div>
           </div>
-          <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex">
-            <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
-              Singapore Office
-            </p>
-            <p className="self-stretch text-white text-xl font-semibold font-proxima leading-relaxed">
-              Cakeplabs 5F, 9 Straits View, Marina One West Tower #05-07
-              Singapore
-            </p>
-          </div>
-          <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex">
+          <div className="w-full h-auto flex-col justify-start items-start gap-1 inline-flex sm:min-w-[328px] sm:flex-1">
             <p className="text-center text-neutral-200 text-base font-normal font-proxima leading-normal">
               Bali Office
             </p>
@@ -54,7 +56,7 @@ export function Footer() {
       </div>
       <div className="w-full h-auto py-8 border-t border-zinc-700 flex-col justify-start items-center gap-8 inline-flex">
         <div className="w-full h-auto justify-center items-center inline-flex">
-          <div className="w-full h-auto pr-[54px] justify-start items-center inline-flex">
+          <div className="w-full h-auto pr-[54px] sm:pr-[58px] justify-start items-center inline-flex">
             <Image
               src={"/logo/logo-alteroLabs.svg"}
               alt="logo alteroLbas"
@@ -62,7 +64,7 @@ export function Footer() {
               width={90}
             />
           </div>
-          <div className="w-full h-auto justify-end items-start gap-4 inline-flex">
+          <div className="w-full h-auto justify-end items-start gap-4 inline-flex sm:max-w-[148px] sm:flex-1">
             <div className="w-10 h-10 p-2 rounded-[999px] border border-white justify-start items-start inline-flex">
               <Image
                 src={"/icon/icon-ig.svg"}
