@@ -1,6 +1,5 @@
 import React from "react";
 import { PortofolioCard } from "../atoms/PortofolioCard";
-import { ServicesCard } from "../atoms/ServicesCard";
 
 export function PortofolioList() {
   return (

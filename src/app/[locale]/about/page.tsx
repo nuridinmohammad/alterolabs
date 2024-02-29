@@ -1,7 +1,12 @@
-import React from 'react'
+
+import { AboutUs } from "@/components/organisms/AboutUs";
+
+import React from "react";
 
 export default function page() {
   return (
-    <div>About Us</div>
-  )
+    <>
+      <AboutUs/>
+    </>
+  );
 }
