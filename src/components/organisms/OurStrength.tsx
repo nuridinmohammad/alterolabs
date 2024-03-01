@@ -5,20 +5,15 @@ import { StrengthList } from "../molecules/StrengthList";
 
 export function OurStrength() {
   return (
-    <div className="flex w-full h-auto py-20 px-4 sm:px-10 flex-col gap-20 bg-[#F9F9F9]">
-      <div className="flex w-full h-auto justify-center items-center">
-        {/* <Image
-          src={"/img/our-strength-img.webp"}
-          height={288}
-          width={300}
-          alt="our-strength-img"
-          className="w-full self-stretch"
-        /> */}
-        <div className="w-full bg-center bg-no-repeat bg-cover bg-[url('/img/our-strength-img.webp')] h-[288px] sm:h-[466px] rounded-lg" />
-      </div>
-      <div className="flex flex-col w-full h-auto justify-center items-start gap-10">
-        <HeadingOurStrength />
-        <StrengthList />
+    <div className="flex w-full h-auto py-20 px-4 sm:px-10 md:items-center flex-col md:flex md:py-[144px] gap-20 bg-[#f9f9f9]">
+      <div className="md:max-w-[1180px] md:flex md:gap-20">
+        <div className=" flex w-full h-auto justify-center items-center md:items-end md:order-2">
+          <div className="w-full bg-center bg-no-repeat bg-cover bg-[url('/img/our-strength-img.webp')] h-[288px] sm:h-[466px] rounded-lg" />
+        </div>
+        <div className="flex flex-col w-full h-auto justify-center items-start gap-10 mt-20 md:mt-0">
+          <HeadingOurStrength />
+          <StrengthList />
+        </div>
       </div>
     </div>
   );

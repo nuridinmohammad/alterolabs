@@ -3,7 +3,7 @@ import { ServicesCard } from "../atoms/ServicesCard";
 
 export function ServicesList() {
   return (
-    <div className="flex w-full h-auto flex-col items-start gap-8">
+    <div className="flex w-full h-auto flex-col items-start gap-8 md:flex-row">
       <ServicesCard
         heading="AI Integration"
         paragraph="We unlock the full potential of your business with our expert AI integrations, delivering intelligent automation and data-driven insights for optimal efficiency."

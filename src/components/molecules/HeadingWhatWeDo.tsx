@@ -2,7 +2,7 @@ import React from "react";
 
 export function HeadingWhatWeDo() {
   return (
-    <div className="flex flex-col w-full h-auto justify-center items-start gap-2">
+    <div className="md:max-w-[1180px] flex flex-col w-full h-auto justify-center items-start gap-2">
       <h3 className="w-full h-auto text-zinc-600 text-xl font-semibold font-proxima leading-relaxed">
         What we do?
       </h3>

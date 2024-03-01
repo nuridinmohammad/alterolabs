@@ -11,8 +11,9 @@ export function CloseButton({
   openDropdown,
   ...props
 }: CloseButtonProps) {
+  
   return (
-    <button {...props}>
+    <button {...props} className="md:hidden">
       <Image
         src={"/icon/icon-close.svg"}
         height={24}

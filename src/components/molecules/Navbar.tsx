@@ -1,32 +1,32 @@
 "use client";
 
-import React, { useState } from "react";
-import { Logo } from "../atoms/Logo";
-import { Hamburger } from "../atoms/Hamburger";
-import Image from "next/image";
-import { CloseButton } from "../atoms/CloseButton";
-import { Button } from "../ui/button";
+import React, { useEffect, useState } from "react";
 import { DropdownMenu } from "./DropdownMenu";
+import { useMediaQuery } from "@react-hook/media-query";
+import { NavbarDesktop } from "./NavbarDesktop";
+import { NavbarTabletMobile } from "./NavbarTabletMobile";
 
 export function Navbar() {
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
   const [openDropdown, setOpenDropdown] = useState(false);
+
+  useEffect(() => {
+    setOpenDropdown(false)
+  }, [isDesktop]);
 
   return (
     <>
       <div className="flex w-full h-20 p-4 justify-center items-center ">
-        <div className=" w-full h-auto flex justify-between items-center flex-1">
-          <Logo />
-          {!openDropdown ? (
-            <Hamburger onClick={() => setOpenDropdown(!openDropdown)} />
-          ) : (
-            <CloseButton
-              openDropdown={openDropdown}
-              setOpenDropdown={setOpenDropdown}
-            />
-          )}
-        </div>
+        {isDesktop ? (
+          <NavbarDesktop />
+        ) : (
+          <NavbarTabletMobile
+            openDropdown={openDropdown}
+            setOpenDropdown={setOpenDropdown}
+          />
+        )}
       </div>
-      {openDropdown ? <DropdownMenu /> : null}
+      <div className="md:hidden">{openDropdown ? <DropdownMenu /> : null}</div>
     </>
   );
 }

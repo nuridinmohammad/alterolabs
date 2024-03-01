@@ -10,7 +10,7 @@ export default function LangButton({ openLange, ...props }: LangButtonProps) {
   return (
     <Button variant={"outline"} size={"sm"} className="w-full">
       <div
-        className="w-full h-auto justify-start items-center gap-4 inline-flex"
+        className="w-full h-auto justify-start items-center gap-4 inline-flex sm:py-2 sm:px-4"
         {...props}
       >
         <span>

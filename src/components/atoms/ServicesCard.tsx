@@ -9,7 +9,7 @@ interface ServicesCardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function ServicesCard({ icon, heading, paragraph }: ServicesCardProps) {
   return (
-    <div className="w-full h-auto p-8 bg-white rounded-lg border border-neutral-300 flex-col justify-start items-center gap-8 inline-flex">
+    <div className="w-full h-auto md:h-[334px] p-8 bg-white rounded-lg border border-neutral-300 flex-col justify-start items-center gap-8 inline-flex">
       <div className="h-auto p-4 bg-violet-200 rounded-full justify-center items-center inline-flex">
         <Image src={`/icon/${icon}`} alt="agile-icon" width={48} height={48} className="sm:h-20 sm:w-20"/>
       </div>

@@ -22,7 +22,7 @@ const config = {
       'sm': '600px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '992px',
+      'md': '1024px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1440px',

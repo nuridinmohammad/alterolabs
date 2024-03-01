@@ -3,9 +3,9 @@ import { HeadingWhatWeDo } from "../molecules/HeadingWhatWeDo";
 
 export function WhatWeDo() {
   return (
-    <div className="flex w-full h-auto py-20 px-4 flex-col items-start gap-10 sm:px-10 sm:gap-8 ">
+    <div className="flex w-full h-auto py-20 px-4 flex-col items-start md:items-center gap-10 sm:px-10 sm:gap-8 md:py-[144px] ">
       <HeadingWhatWeDo />
-      <p className="w-full h-auto text-zinc-600 text-base font-normal font-proxima leading-normal sm:leading-6">
+      <p className="md:max-w-[1180px] w-full h-auto text-zinc-600 text-base font-normal font-proxima leading-normal sm:leading-6">
         At AlteroLabs, we revolutionize the digital landscape, offering
         comprehensive outsourcing services such as AI Integration, Web 3.0,
         Fintech, and 3D Design. We transform ideas into captivating and
